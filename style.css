@@ -241,6 +241,8 @@ main section .post main p {
   font-family: "Lora";
   font-weight: 700;
   font-size: 2.2rem;
+
+  margin-left: -1.7rem;
 }
 
 /*#endregion*/
