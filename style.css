@@ -30,7 +30,7 @@ header {
 
 header a {
   font-family: "Crimson Pro", serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
 
   text-decoration: none;
   padding: 1rem;
@@ -45,7 +45,7 @@ header a:hover {
 }
 
 header .material-icons {
-  font-size: 3.5rem;
+  font-size: 4rem;
 
   cursor: pointer;
 }
@@ -115,8 +115,8 @@ main section .post {
   padding: 1.5rem 2.5rem 2.5rem;
 
   position: absolute;
-  bottom: -80px;
-  right: 15px;
+  bottom: -110px;
+  right: 16px;
 
   box-shadow: 0 5px 20px black;
 }
@@ -165,14 +165,14 @@ main section .post main p {
   font-size: 2.2rem;
 }
 
+/*#endregion*/
+
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 175px;
+  margin-top: 180px;
   width: 100%;
 }
-
-/*#endregion*/
 
 footer p {
   font-size: 1.5rem;
