@@ -45,10 +45,6 @@ nav .logo {
   transition: 0.4s border ease;
 }
 
-nav > .logo:hover {
-  border: 4px solid white;
-}
-
 .nav-links {
   width: 100%;
   height: 100vh;
@@ -74,12 +70,18 @@ nav > .logo:hover {
   transform: translateX(0%);
 }
 
+.nav-active li a:hover {
+  font-size: 30px;
+}
+
 .nav-links li a {
   font-family: "Montserrat";
   font-size: 20px;
 
   text-decoration: none;
   border: none;
+
+  transition: all 0.4s ease;
 }
 
 .nav-links li:nth-child(1) {
