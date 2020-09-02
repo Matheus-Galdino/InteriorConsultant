@@ -34,7 +34,7 @@ body > div {
 /*#region Nav*/
 
 nav {
-  height: 8vh;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
 }
@@ -42,11 +42,15 @@ nav {
 nav .logo {
   font-family: "Crimson Pro", serif;
   font-size: 2rem;
+
+  vertical-align: middle;
   text-decoration: none;
 
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 2rem;
   padding: 1rem;
+
+  height: 5rem;
 
   border: 1.5px solid white;
 
@@ -143,11 +147,7 @@ main {
   margin: 5rem 2rem;
 }
 
-main section {
-  position: relative;
-}
-
-main section > h1 {
+.intro h1 {
   font-family: "Lora", serif;
   font-size: 5rem;
   font-weight: normal;
@@ -157,7 +157,7 @@ main section > h1 {
   margin-bottom: 3rem;
 }
 
-main section > p {
+.intro p {
   width: 32rem;
 
   font-family: "Montserrat", sans-serif;
@@ -165,7 +165,7 @@ main section > p {
   font-size: 2rem;
 }
 
-main section .more-container {
+.intro .more-container {
   display: flex;
   align-items: center;
 
@@ -174,7 +174,7 @@ main section .more-container {
   cursor: pointer;
 }
 
-main section .more-container small {
+.intro .more-container small {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
@@ -182,16 +182,22 @@ main section .more-container small {
   margin-right: 1rem;
 }
 
-main section .more-container .material-icons {
+.intro .more-container .material-icons {
   font-size: 3.5rem;
 }
 
-main section > img {
-  width: 100%;
-  height: 40rem;
+.image-container {
+  position: relative;
 }
 
-main section .post {
+.image-container img {
+  width: 100%;
+  height: 40rem;
+
+  display: block;
+}
+
+.image-container .post {
   width: 90%;
   height: auto;
 
@@ -201,13 +207,13 @@ main section .post {
   padding: 1.5rem 2.5rem 2.5rem;
 
   position: absolute;
-  bottom: -110px;
-  right: 16px;
+  bottom: -100px;
+  right: 35px;
 
   box-shadow: 0 5px 20px black;
 }
 
-main section .post header {
+.image-container .post header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -215,7 +221,7 @@ main section .post header {
   margin-bottom: 2.5rem;
 }
 
-main section .post header img {
+.image-container .post header img {
   border-radius: 50%;
   height: 5.5rem;
   width: 5.5rem;
@@ -223,7 +229,7 @@ main section .post header img {
   margin-right: 2rem;
 }
 
-main section .post header div h3 {
+.image-container .post header div h3 {
   font-family: "Montserrat";
   font-size: 1.6rem;
   font-weight: 500;
@@ -231,19 +237,19 @@ main section .post header div h3 {
   margin-bottom: 0.5rem;
 }
 
-main section .post header div h4 {
+.image-container .post header div h4 {
   font-family: "Montserrat";
   font-size: 1.3rem;
   font-weight: 500;
   color: #828282;
 }
 
-main section .post main {
+.image-container .post main {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-main section .post main p {
+.image-container .post main p {
   width: 65%;
 
   font-family: "Lora";
@@ -269,12 +275,98 @@ footer p {
   border-top: 2px solid #a9a9a9;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1000px) {
   .burger {
     display: none;
   }
 
+  nav,
+  main {
+    margin-left: 65px;
+    margin-right: 65px;
+  }
+
+  nav {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  nav .logo {
+    margin: 0;
+  }
+
   nav .nav-links {
+    width: 50%;
+    height: 100%;
+
+    background: none;
+
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    position: initial;
+
+    transform: none;
+  }
+
+  main section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+  }
+
+  .intro p {
+    font-size: 24px;
+    width: 80%;
+  }
+
+  .image-container > img {
+    width: 100%;
+    height: 587px;
+  }
+
+  .image-container .post {
+    width: 470px;
+    height: 189px;
+  }
+
+  .image-container .post main p {
+    width: 80%;
+  }
+
+  footer p {
+    margin-bottom: 25px;
+    padding-top: 15px;
+    color: #a9a9a9;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main section {
+    justify-content: space-around;
+  }
+
+  .intro {
+    width: 30%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .image-container > img {
+    width: 821px;
+    height: 587px;
   }
 }
