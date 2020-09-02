@@ -24,6 +24,7 @@ body {
 
 body > div {
   overflow-x: hidden;
+  position: relative;
 }
 
 /*#region Nav*/
