@@ -14,7 +14,9 @@
   color: white;
 }
 
-html {
+html,
+body,
+body > div {
   height: 100vh;
 }
 
@@ -198,7 +200,7 @@ main {
 }
 
 .image-container .post {
-  width: 90%;
+  width: 80%;
   height: auto;
 
   background: #181719;
@@ -207,8 +209,8 @@ main {
   padding: 1.5rem 2.5rem 2.5rem;
 
   position: absolute;
-  bottom: -100px;
-  right: 35px;
+  bottom: -110px;
+  right: 15px;
 
   box-shadow: 0 5px 20px black;
 }
@@ -250,7 +252,7 @@ main {
 }
 
 .image-container .post main p {
-  width: 65%;
+  width: 80%;
 
   font-family: "Lora";
   font-weight: 700;
@@ -264,15 +266,15 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  margin: 180px auto 0;
+  margin: 160px auto 15px;
   width: 100%;
 }
 
 footer p {
   font-size: 1.5rem;
-
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0;
   border-top: 2px solid #a9a9a9;
+  color: #a9a9a9;
 }
 
 @media screen and (min-width: 1000px) {
@@ -346,9 +348,7 @@ footer p {
   }
 
   footer p {
-    margin-bottom: 25px;
     padding-top: 15px;
-    color: #a9a9a9;
   }
 }
 
@@ -368,5 +368,9 @@ footer p {
   .image-container > img {
     width: 821px;
     height: 587px;
+  }
+
+  .image-container .post {
+    width: 60%;
   }
 }
