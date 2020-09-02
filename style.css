@@ -20,6 +20,9 @@ html {
 
 body {
   background: #181719;
+}
+
+body > div {
   overflow-x: hidden;
 }
 
@@ -184,7 +187,7 @@ main section > img {
 }
 
 main section .post {
-  width: 85%;
+  width: 90%;
   height: auto;
 
   background: #181719;
@@ -251,7 +254,7 @@ footer {
   display: flex;
   justify-content: center;
   margin: 180px auto 0;
-  width: 60%;
+  width: 100%;
 }
 
 footer p {
