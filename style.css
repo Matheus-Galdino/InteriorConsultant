@@ -28,7 +28,7 @@ body > div {
 }
 
 .scroll-toggle {
-  overflow-y: hidden;
+  position: fixed;
 }
 
 /*#region Nav*/
