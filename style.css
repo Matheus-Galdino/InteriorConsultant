@@ -27,6 +27,10 @@ body > div {
   position: relative;
 }
 
+.scroll-toggle {
+  overflow-y: hidden;
+}
+
 /*#region Nav*/
 
 nav {
